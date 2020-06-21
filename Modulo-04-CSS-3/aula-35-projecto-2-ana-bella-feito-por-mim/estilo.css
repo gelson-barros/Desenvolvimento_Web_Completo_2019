@@ -1,0 +1,37 @@
+body{
+    background-image: url('imagens/fundo.png');
+    font-family: sans-serif;
+}
+
+#principal{
+    width: 66%;
+    background-color: rgb(222, 233, 203);
+}
+#capa{
+    height: 388px;
+    background-image: url('imagens/capa.png');
+}
+
+#menu{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+    color: rgba(17, 68, 71, 0.897);
+    /*background-color: blanchedalmond;*/
+}
+
+#sobre{
+    padding-top: 10px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+#sobre>h3{
+    color: rgba(222, 184, 135, 0.925);
+}
+
+#rodape{
+    width: 66%;
+    text-align: center;
+    font-weight: bold;
+}

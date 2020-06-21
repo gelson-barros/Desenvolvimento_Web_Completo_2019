@@ -1,0 +1,8 @@
+/*
+elemento inline, block e inline-block
+*/
+.borda{
+    border: 1px solid red;
+    /*display: inline;*/
+    display: inline-block;
+}
