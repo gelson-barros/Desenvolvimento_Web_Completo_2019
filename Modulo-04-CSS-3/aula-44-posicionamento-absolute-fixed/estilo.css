@@ -1,0 +1,52 @@
+/*
+Posicionamentos (static, relative, absolute e fixed)
+*/
+body{
+    background: #007fc7;
+}
+#container{
+    background: #fff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+h1{
+    /*static -> padrão*/
+    
+
+}
+p{
+    width: 300px;
+}
+
+/*fixed sai do fluxo normal da pagina e nao afecta a posição dos outros e a nova posição começa na declaração da propriedade de deslocamento e se mantem fixo em relação a janela no da navegador*/
+.fixed{
+    border: 1px solid red;
+    background: #f2f2f2;
+    margin: 0px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+ 
+}
+/*absolute sai do fluxo normal da pagina e nao afecta a posição dos outros e a nova posição começa na declaração da propriedade de deslocamento*/
+.absolute{
+    border: 1px solid red;
+    background: #f2f2f2;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+
+/*relative se mantem no fluxo normal da pagina com activação da propriedades de deslocamento*/
+.relative {
+    border: 1px solid red;
+    position: relative;
+    /*propriedade de deslocamento:top, right, bottom e left*/
+    /*top: 20px;
+    left: 80px;
+    right: 20px;*/
+    bottom: 20px;
+}

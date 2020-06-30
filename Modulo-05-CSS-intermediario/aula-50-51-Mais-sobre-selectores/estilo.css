@@ -1,0 +1,58 @@
+/****************
+selector universal
+
+* {
+	border: 1px solid red;	
+}*/
+/****************
+selector texto
+
+h1{
+	color: green;
+}*/
+
+/****************
+selector classe
+
+.verde{
+	color: green;
+}
+
+p.verde{ a classe só se utiliza no paragrafo p 
+	color: green;
+}*/
+
+/****************
+selector id
+
+#cabecalho{
+	border: 1px solid blue;
+}*/
+
+/****************
+selector filho
+
+li>a {
+	color: red;
+	text-decoration: none;
+}*/
+/****************
+selector descendente
+
+div a {
+	color: green;
+}*/
+
+/****************
+selector irmao adjacente
+
+h1+p {
+	color: red;
+}*/
+/****************
+selector irmão geral
+*/
+h1~p {
+	color: pink;
+}
+ 

@@ -1,0 +1,47 @@
+/**********************************
+heranca-especificidade
+
+
+*{
+	border: 1px solid blue;
+}
+
+em body
+propriedade que não são herdado:
+border,background
+
+body{
+	color: red;
+	font-size: 16px;
+	border: 1px solid blue;
+	background: gray;
+}
+*/
+
+/*Selectores iguais, exceção inportant
+p{
+	color: blue !important;
+}
+
+p{
+	color: red;
+}*/
+
+/*Se um selector for mais específico que outro a regra mais específica será aplicada(terá precedência sobre regras mais gerais)
+*/
+
+*{/*4*/
+	color: red;
+}
+
+h2{/*3*/
+	color:blue;
+}
+
+h2.verde{/*2*/
+	color: green;
+}
+
+h2#amarelo{/*1*/
+	color: yellow;
+}

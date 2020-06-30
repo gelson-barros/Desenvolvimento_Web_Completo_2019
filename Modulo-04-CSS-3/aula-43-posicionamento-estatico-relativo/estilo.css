@@ -1,3 +1,31 @@
 /*
-posicionamento estatico e relativo
+Posicionamentos (static, relative, absolute e fixed)
 */
+body{
+    background: #007fc7;
+}
+#container{
+    background: #fff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h1{
+    /*static -> padrão*/
+
+}
+p{
+    width: 400px;
+}
+
+/*relative se mantem no fluxo normal da pagina com activação da propriedades de deslocamento*/
+.relative {
+    border: 1px solid red;
+    position: relative;
+    /*propriedade de deslocamento:top, right, bottom e left*/
+    /*top: 20px;
+    left: 80px;
+    right: 20px;*/
+    bottom: 20px;
+}
