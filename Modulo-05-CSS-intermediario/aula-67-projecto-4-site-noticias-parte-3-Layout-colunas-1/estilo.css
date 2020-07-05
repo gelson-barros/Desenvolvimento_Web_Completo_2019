@@ -1,0 +1,117 @@
+/**********************************
+Arredondamento com imagens
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #fff url(imagens/fundo.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+
+#top{
+    height: 150px;
+    background:  url(imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+    /*border: 1px solid red;*/
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+/*
+barra de navegação
+*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#top ul{
+    float: left;
+    margin-top: 30px;
+    background: #b10333;
+}
+#top ul li{
+    float: left;
+}
+
+#top ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(imagens/divisor.png) no-repeat left center;
+}
+
+#top ul .primeiro a{
+    background: none;
+}
+
+#top ul a:hover{
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos
+{
+    color:#fff;
+    background-color: #de003e;
+    cursor: text;
+}
+
+/* Conteudo layout de trÊs colunas*/
+#conteudo{
+    margin-top: 60px;
+    background:#f5f5f5;
+}
+
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+    background: blue;
+}
+
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+    background: green;
+}
+
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+    background: yellow;
+}
+
+
+
+#container-rodape{
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    /*text-align: center;*/
+}
