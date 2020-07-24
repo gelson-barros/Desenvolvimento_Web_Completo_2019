@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <title>Museu Nacioanl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilo customizado-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--[if IE]>
+      <script src="js/html5shiv.js"></script>  
+    <![endif]-->
+    
+</head>
+<body>
+  <div id="container"><!-- Início do container-->
+    <header><!-- Início do header-->
+      <div id="logo"><!-- Início do logo-->
+        <h1><a href="">Museu Nacional</a></h1>
+      </div><!-- Fim do logo-->
+
+      <nav ><!-- Início do nav-->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Exposições</a></li>
+          <li><a href="#">Pesquisa</a></li>
+          <li><a href="#">Acervos</a></li>
+          <li><a href="#">Vídeos</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav><!-- Fim do nav-->
+      
+    </header><!-- Fim do header-->
+
+    <div id="principal"><!-- Início do principal-->
+      <div id="conteudo"><!-- Início do conteudo-->
+        <section id="capa"><!-- Início do capa-->
+          <img src="img/museu.png">
+        </section><!-- Fim do capa-->
+      </div><!-- Fim do conteudo-->
+      <aside><!-- Início do aside-->
+        <section id="depoimento">
+          <img src="img/depoimento.png">
+        </section>
+        <section id="visita"><!-- Início do seccao visita-->
+          <h4>Faça uma visita</h4>
+          <form >
+            <fieldset>
+              <legend>Selecione uma data</legend>
+
+              <label for="data" >Data</label>
+              <input type="text" id="data" value="dd/mm/aaaa">
+
+              <label for="qtd" >Qtd pessoas</label>
+              <input type="text" style="width: 30px;"class="campo" id="qtd" value="1">
+
+            </fieldset>
+
+            <input type="submit" class="botao" class="campo" value="Verificar disponibilidade">
+          </form>
+        </section><!-- Fim do seccao visita-->
+        <section id="galeria"><!-- Início do seccao galeria-->
+          <h4>Galeria de fotos</h4>
+
+          <a href="">
+            <img src="img/imagem1.jpg" height="93" width="93">
+          </a>
+
+          <a href="">
+            <img src="img/imagem2.jpg" height="93" width="93">
+          </a>
+          
+          <a href="">
+            <img src="img/imagem3.jpg" height="93" width="93">
+          </a>
+          
+          <a href="">
+            <img src="img/imagem4.jpg" height="93" width="93">
+          </a>
+        </section><!-- Fim do seccao galeria-->
+      </aside><!-- Fim do aside-->
+    </div><!-- Fim do principal-->
+  </div><!-- Fim do container-->
+
+  
+</body>
+</html>
