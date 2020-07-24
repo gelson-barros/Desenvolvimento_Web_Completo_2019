@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <title>Novas tag input html 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilo customizado-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--[if IE]>
+      <script src="js/html5shiv.js"></script>  
+    <![endif]-->
+    
+</head>
+<body>
+  <form>
+    <!-- Novos Inputs e atributos HTML 5  required-->
+    <!--Texto-->
+    <label for="nome">Nome</label>
+    <input type="text" id="nome"  autofocus>
+    <br><br>
+
+    <!--Email-->
+    <label for="email">Email</label>
+    <input type="email"  id="email" >
+    <br><br>
+
+    <!--Número-->
+    <label for="numero">Numero</label>
+    <input type="number"  id="numero" min="1" max="20" step="5">
+    <br><br>
+
+    <!--URL-->
+    <label for="url">Url</label>
+    <input type="url"  id="url" placeholder="Ex: http://www...">
+    <br><br>
+
+    <!--Pesquisa-->
+    <label for="pesquisa">Pesquisa</label>
+    <input type="search"  id="pesquisa">
+    <br><br>
+
+    <!--Range-->
+    <label for="range">Range</label>
+    <input type="range"  id="range" min="1" max="20" value="10">
+    <br><br>
+
+    <!--Data-->
+    <label for="data">Data</label>
+    <input type="date"  id="data" min="1" max="20" value="10">
+    <br><br>
+
+    <!--Color-->
+    <label for="cor">Cor</label>
+    <input type="color"  id="cor" min="1" max="20" value="10">
+    <br><br>
+
+    <input type="submit" value="Enviar" >
+  </form>
+</body>
+</html>
