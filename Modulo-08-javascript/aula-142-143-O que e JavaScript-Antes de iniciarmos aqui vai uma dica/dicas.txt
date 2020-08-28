@@ -1,0 +1,23 @@
+O que é JavaScript?
+Linguagem de programação de alto nível(se a semelha a linguagem do ser humano)
+
+Linguagem muito abrangente 
+pode servir como :
+-Client-side: ela pode ser executada dentro dos browser de tal modo encaminhado script do JavaScript neste browser eles são capaz de interpretar e executar as instrucões.
+-Server-side: do lado do servidor
+-Desktop: utilizando Electron.js
+-Mobile: Reactive native
+
+JavaScript não JavaScript
+JavaScript é mantido pelo W3C que cuida pela padronização tecnologia web 
+outro projecto para aprender é a w3schools
+
+O JavaScript como Client-Side permite aplicar dinâmica aos elementos da página web
+Linguagem interpretada
+/*********************************************************************************/
+Dicas do uso das ferramentas de desenvolvedor disponivel de forma nativa nos principais browser do mercado.
+Fazer teste em browser diferentes no minimo(chrome e firefox)
+No chrome ferramenta de desenvolvedor nativa
+vai ao (menu do browser) depois vai ao em (Mais ferramentas)
+vai a ferramenta do desenvolvedor ou
+ctrl + shift + I
