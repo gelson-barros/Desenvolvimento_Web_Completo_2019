@@ -9,8 +9,8 @@
 //Menor igual (<=) - Verifica se o valor da esquerda é menor ou igual que o valor da direito
 //Maior igual (>=) - Verifica se o valor da esquerda é maior ou igual que o valor da direito
 
-if (7 !== 7) {
-    // 2==2 ou 2==='2' ou 'abc'!='abc' ou 2 !== 7
+if (8 < 14) {
+    // 2==2 ou 2==='2' ou 'abc'!='abc' ou 2 !== 7 ou 8 < 14 ou 8 > 14 ou 8 <= 14 ou 8 >= 14
     document.write("Entrou dentro do bloco if (verdadeiro)");
 }else{
     document.write("Entrou dentro do bloco else (falso)");   
