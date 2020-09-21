@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Arrow function</title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        /*
+        //normal
+        let quadrado = function (x = 5) {
+            return x * x
+        }
+        document.write(quadrado(3))
+        */
+        /*
+        // notação da arrow function
+        let quadrado = (x) => {
+            return x * x
+        }
+        document.write(quadrado(3))
+        */
+       /*
+        //notação simplificada do arrow function com poucas instruções
+        let quadrado = x => x * x//return implícito
+        
+        document.write(quadrado(3))
+        */
+
+
+        //Exemplo
+
+        /*
+        //normal
+        let parOuImpar = function (numero) {
+            if ((numero % 2) === 0) {
+                return 'par'
+            } else {
+                return 'ímpar'
+            }
+        }
+        document.write(parOuImpar(7))
+        */
+        /*
+        //Arrow function 
+        let parOuImpar = numero => {
+            if ((numero % 2) === 0) {
+                return 'par'
+            } else {
+                return 'ímpar'
+            }
+        }
+        document.write(parOuImpar(7))
+        */
+        //Arrow function com operador ternario
+        let parOuImpar = numero => ((numero % 2) === 0) ? 'par':'ímpar' // return implícito
+        
+        document.write(parOuImpar(7))
+
+        
+
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

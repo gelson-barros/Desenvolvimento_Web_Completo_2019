@@ -1,0 +1,3 @@
+operador de declaração de variáveis Var e Let
+
+Tanto var e let são declaradores de variavel só que um let preserva escopo onde a variavel foi declarada

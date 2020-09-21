@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constante</title>
+    <script src="babel.min.js"></script>
+    <script>
+        //const boa pratica em declaração em letra maiuscula
+        const SERIE = 'Friends'
+        //nao se pode atribuir novos valores.
+        //SERIE = 'The Walking Dead'
+        //pode se declarar mesma const em escopo diferente, que nenhum vai interferir no outro
+        function x() {
+            const SERIE = 'The Walking Dead'
+            console.log('Dentro da função: ' + SERIE)
+        }
+
+        x()
+        console.log('Escopo global: ' + SERIE)
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

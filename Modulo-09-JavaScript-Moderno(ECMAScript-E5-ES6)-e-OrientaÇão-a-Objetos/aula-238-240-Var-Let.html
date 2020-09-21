@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var e Let</title>
+    <script src="babel.min.js"></script>
+    <script>
+        // 3 escopos: global, função e bloco
+        //hosting
+        /*
+        var serie = 'Friends'//global
+
+        function x() {
+
+            var serie = 'Game of Thrones'//função
+            console.log(serie)
+            if (true) {
+                console.log(serie)
+            }
+        }
+
+        x()
+
+        if (true) {
+            console.log(serie)   
+        }
+        */
+        /*
+        if (true) {
+            let serie = 'Friends'   
+        }
+        console.log(serie)
+        */
+
+        /*
+        var serie = 'Friends'
+        {
+            var serie = 'The Walking Dead'
+            console.log('Dentro do bloco: '+ serie)
+        }
+        console.log('Fora do bloco: '+ serie)
+        */
+
+
+       /*
+        let serie = 'Friends'
+        {
+            let serie = 'The Walking Dead'
+            console.log('Dentro do bloco: '+ serie)
+        }
+        console.log('Fora do bloco: '+ serie)
+        */
+        let serie = 'Friends'
+        {
+            var serie = 'The Walking Dead'
+            console.log('Dentro do bloco: '+ serie)
+        }
+        console.log('Fora do bloco: '+ serie)
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html> 
