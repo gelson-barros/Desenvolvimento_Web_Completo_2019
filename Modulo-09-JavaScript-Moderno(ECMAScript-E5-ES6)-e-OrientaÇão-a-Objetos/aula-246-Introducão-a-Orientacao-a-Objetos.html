@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO</title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        //Paradigma Procedural
+        //Chamada de procedimentos(procedures) para manipulação de dados
+        /*
+        let a = 10
+        let b = 7
+        let operador = 'mult'
+
+        function calcular(a, b, operator) {
+            if(operador === 'mult'){
+                console.log(a*b)
+            }
+        }
+
+        calcular(a, b, operador)
+        */
+        //Paradigma de orientação a objectos
+        //Estruturas de dados com comportamentos
+
+        class Calculadora{
+            constructor(){
+                this.a = 10
+                this.b = 7
+                this.operador = 'mult'
+            }
+            calcular(){
+                if (this.operador === 'mult') {
+                    console.log(this.a*this.b)
+                }
+            }
+        }
+
+        calculadora = new Calculadora()
+        calculadora.calcular()
+
+        /*
+        4 pilares da Programação orientado a objecto que são:
+        1º Abstração
+        2ºEncapsulamento
+        3ºHerânça
+        4ºPolimorfismo
+        */
+    </script>
+</head>
+<body>
+
+</body>
+</html> 
