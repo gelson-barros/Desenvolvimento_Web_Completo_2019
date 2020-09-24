@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <script>
+        function verHora(){
+            let hora = new Date();
+            let h = hora.getHours();
+            let m = hora.getMinutes();
+            let s = hora.getSeconds();
+            m = zero(m);
+            s = zero(s);
+            document.getElementById('relogio').innerHTML = h+':'+m+':'+s;
+            actualiza = setTimeout('verHora()', 500);
+        }
+        function zero(x){
+            if(x<10){
+                x = '0'+x;
+            }
+            return x;
+        }
+    </script>
+</head>
+<body onload="verHora()">
+    <h1 id="relogio"></h1>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function verHora(){
+            let hora = new Date();
+            let h = hora.getHours();
+            let m = hora.getMinutes();
+            let s = hora.getSeconds();
+            m = zero(m);
+            s = zero(s);
+            document.getElementById('hora').innerHTML = h;
+            document.getElementById('minuto').innerHTML = m;
+            document.getElementById('segundo').innerHTML = s;
+            actualiza = setTimeout('verHora()', 500);
+        }
+        
+        function zero(x){
+            if(x<10){
+                x = '0'+x;
+            }
+            return x;
+        }
+    </script>
+</head>
+<body onload="verHora()">
+    <div id="clock">
+        <h2>QUE HORAS SÃO?</h2>
+        <div id="time">
+            <div><span id="hora">00</span><span>Horas</span></div>
+            <div><span id="minuto">00</span><span>Minutos</span></div>
+            <div><span id="segundo">00</span><span>Segundos</span></div>
+        </div>
+        
+    </div>
+</body>
+</html>
