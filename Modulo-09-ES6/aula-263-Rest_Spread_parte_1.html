@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO -Rest/Spread </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        //operador Rest/Spread
+        /*
+        operador e de tres pontos ...
+        O que define se é Spread ou Rest é o contexto que esta ser utilizado
+        Spread quando espalhamos estrutura de dados
+        Rest quando juntamos estrutura de dados
+        */
+
+        //Contexto spread
+        
+        //string
+        let tituloArtigo = 'Como utilizar o operador rest/spread'
+
+        console.log(tituloArtigo)
+        console.log(...tituloArtigo)
+        console.log([...tituloArtigo])
+
+        //arrays
+        let listCursos1 = ['NodeJS e MongoDB', 'ES6, TypeScript e Angular 4']
+        let listCursos2 = ['Multiplataforma Android/Ios', 'Introdução ao GNU/Linux']
+        let listCursosCompleto = ['Web Completo','Android completo', ...listCursos1, ...listCursos2]
+        console.log(listCursosCompleto)
+
+        //objectos
+        let pessoa = {nome: 'João', idade:20}
+        let clone = {  ...pessoa, endereco: 'Rua Abc'}
+        console.log(clone)
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

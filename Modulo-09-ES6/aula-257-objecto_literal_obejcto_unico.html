@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO - Objectos literais inclusão de atributos </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        let assinatura = {
+            idCliente: 1000,
+            descricao : 'Acesso a internet',
+            idade : 28,
+            status(){
+                console.log('activo')
+            }
+        }        
+        console.log(assinatura.descricao)
+        
+        let y = assinatura
+
+        console.log(y.descricao)
+
+        y.descricao = 'Internet + tv telefone'
+
+        console.log(assinatura.descricao)
+        console.log(y.descricao)
+        
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO - Função Construtora </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        let Carro = function(){
+            this.cor = 'Amareli'
+            this.modelo = 'Chevette'
+            this.velocidadeActual = 0
+            this.velocidadeMaxima = 180
+
+            this.acelerar = function(){
+                let velocidade = this.getVelocidadeActual() + 10
+                this.setVelocidadeActual(velocidade)
+            }
+            this.getVelocidadeActual = function(){
+                return this.velocidadeActual 
+            }
+            this.setVelocidadeActual = function(velocidadeActual){
+                this.velocidadeActual = velocidadeActual
+            }
+
+        }
+        
+        let carro = new Carro()
+        console.log(`A velocidade actual é : ${carro.getVelocidadeActual()}`) 
+        carro.acelerar()
+        carro.acelerar()
+        carro.acelerar()
+        console.log(`A velocidade actual é : ${carro.getVelocidadeActual()}`) 
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

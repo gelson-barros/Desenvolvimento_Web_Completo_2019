@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO -Rest/Spread </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        //operador Rest/Spread
+        /*
+        operador e de tres pontos ...
+        O que define se é Spread ou Rest é o contexto que esta ser utilizado
+        Spread quando espalhamos estrutura de dados
+        Rest quando juntamos estrutura de dados
+        */
+
+        //Contexto rest e utilizado na função
+        
+        function soma(...param){
+            let resultado = 0
+            //console.log(param)
+            param.forEach(v => resultado += v)
+            return resultado
+        }
+
+        console.log(soma(3,8,5,7,-2,10,22))
+
+        function multiplicacao(m, ...p){
+            //console.log(m)
+            let resultado = 0
+            //console.log(p)
+            p.forEach(v => resultado += m * v)
+            return resultado
+        }
+
+        console.log(multiplicacao(5,7,3,43,4))
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

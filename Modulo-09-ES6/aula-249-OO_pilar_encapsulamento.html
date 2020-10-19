@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO - Encapsulamento</title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        class Tv {
+            constructor(){
+               this._relacaoCanais = Array(2, 4, 5, 7, 10)
+               this._canalActivo = 5
+               this._volume = 5
+            }
+
+            //getters setters
+            get canalActivo() {
+                return this._canalActivo
+            }
+
+            set canalActivo(canal){
+                //controlar sê esta disponivel
+                if(this._relacaoCanais.indexOf(canal) !== -1){
+                    this._canalActivo = canal
+                }
+                
+            }
+
+        }
+
+        let tv = new Tv()
+        tv.canalActivo = 7
+        console.log(tv.canalActivo)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

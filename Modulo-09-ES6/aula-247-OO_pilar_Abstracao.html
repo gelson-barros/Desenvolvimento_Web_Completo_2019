@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO - Abstração</title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        // Abstração - Hbilidade intuitiva e deconhecimento das coisas ou seja compreender as coisas do mundo real e trazer para dentro do mundo da programação.
+
+        //Entidade
+        /*
+        E1: Carro
+        E2: Sonho
+        E3: ContaBancaria
+         
+        */
+        //Identidade
+        /*
+        E1: x = new Carro()
+        E2: z = new Sonho()
+        E3: y = new ContaBancaria()
+
+        */
+        //Caracteristicas
+        /*
+        E1: marca,modelo,cor,qtdePortas
+        E2: tipo, historia, gostaria_sonhar_denovo
+        E3: agencia, numeroConta, saldo, limite
+
+        */
+        //Acções
+        /*
+        E1: ligar, acelerar, freiar, desligar
+        E2: exibirhistoria
+        E3: depositar, sacar, consultaSaldo
+
+        */
+       //Modelo da objecto
+        class ContaBancaria {
+            //agencia
+            //numeroConta
+            //saldo
+            //limite
+            constructor(){
+                this.agencia = 1075
+                this.numeroConta = 892323
+                this.saldo = 50
+                this.limite = 450
+            }
+
+            depositar(valorDeposito){
+               this.saldo += valorDeposito 
+            }
+
+            sacar(valorSaque){
+                this.saldo -= valorSaque
+            }
+
+            consultaSaldo(){
+                return this.saldo
+            }
+        }
+
+        let x = new ContaBancaria()
+        let y = new ContaBancaria()
+        console.log(x.consultaSaldo())
+        x.depositar(450)
+        console.log(x.consultaSaldo())
+        x.sacar(200)
+        console.log(x.consultaSaldo())
+
+        console.log(y.consultaSaldo())
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

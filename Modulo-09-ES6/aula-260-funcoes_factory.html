@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO - Funções Factory </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        let bicicleta1 = {
+            cor : 'Branca',
+            marcha: 'única',
+            aro: 2,
+            pedalar(){console.log('Método pedalar executado')}
+        }
+
+        let bicicleta2 = {
+            cor : 'Vermelha',
+            marcha: '18',
+            aro: 26,
+            pedalar(){console.log('Método pedalar executado')}
+        }
+
+        console.log(bicicleta1)
+        console.log(bicicleta2)
+        /*
+        let BicicletaFactory = function(cor, marcha, aro) {
+            return{
+                cor : cor,
+                marcha: marcha,
+                aro: aro,
+                pedalar(){console.log('Método pedalar executado')}
+            }
+        }
+        */
+        let BicicletaFactory = function(cor, marcha, aro) {
+            return{
+                cor,
+                marcha,
+                aro,
+                pedalar(){console.log('Método pedalar executado')}
+            }
+        }
+
+        let bicicleta3 = BicicletaFactory('Azul', '18', 29)
+        console.log(bicicleta3)
+
+        let bicicleta4 = BicicletaFactory('Preta', '21', 19)
+        console.log(bicicleta4)
+
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

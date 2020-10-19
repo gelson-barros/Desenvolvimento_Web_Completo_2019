@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        //destructuring é um operador de destruturação ou seja tira valores dentro de uma estrutura(array ou objecto)
+
+        //obejecto
+        let produto = {// tem um
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: {//composição é um
+                fabricante: 'abc',
+                modelo: undefined
+            }
+        }
+        //fica atento
+        //token
+        //array => []
+        //objecto => {}
+        //let {descricao, preco} = produto
+        //let {descricao: d, preco: p = 1300, desconto = 5} = produto
+        let {detalhes:{ fabricante: f, modelo = 'Não informado'}} = produto
+        console.log(f, modelo)
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html> 

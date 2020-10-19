@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring </title>
+    <script src="babel.min.js"></script>
+    <script type="text/babel">
+        //destructuring é um operador de destruturação ou seja tira valores dentro de uma estrutura(array ou objecto)
+
+        //array
+        /*
+        let arr = [10, 20, 30, 40]
+        function teste([a, b, ,c,d=100]){
+            console.log(a,b,c,d)
+        }
+        teste(arr)
+        */
+       //objecto
+       let obj = {
+           a: 10,
+           b: 20,
+           c: 30,
+           d: 40,
+       }
+
+       function teste({a:x,d, z=10}){
+        console.log(x,d, z)
+       }
+       teste(obj)
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html> 
