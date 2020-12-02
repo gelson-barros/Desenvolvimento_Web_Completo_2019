@@ -1,0 +1,76 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>App Pesquisa Endereço</title>
+		<!-- bootstrap-->
+	<link rel="stylesheet" href="../../frameworks/bootstrap4/css/bootstrap.min.css" >
+	<script>
+		function getDadosEndereçoPorCEP(cep){
+			//console.log(cep)
+			let url = 'https://viacep.com.br/ws/'+cep+'/json/unicode/'
+			//console.log(url)
+			let xmlHttp = new XMLHttpRequest()
+			xmlHttp.open('GET', url)
+
+			xmlHttp.onreadystatechange = ()=>{
+				if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+					//console.log(xmlHttp.responseText)
+					let dadosJSONText = xmlHttp.responseText
+					let dadosJSONObj = JSON.parse(dadosJSONText)
+
+					
+					//console.log(dadosJSONObj.logradouro)
+					//console.log(dadosJSONObj.bairro)
+					//console.log(dadosJSONObj.localidade)
+					//console.log(dadosJSONObj.uf)
+
+					document.getElementById('endereco').value = dadosJSONObj.logradouro
+					document.getElementById('bairro').value = dadosJSONObj.bairro
+					document.getElementById('cidade').value = dadosJSONObj.localidade
+					document.getElementById('uf').value = dadosJSONObj.uf
+				}
+
+				if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+					
+				}
+			}
+
+			xmlHttp.send()
+		}
+	</script>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-light bg-light mb-4">
+			<div class="container">
+				<div class="navbar-brand mb-0 h1">
+					<h3>App Pesquisa Endereço</h3>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row form-group">
+				<div class="col-sm-3">
+					<input type="text" class="form-control" placeholder="CEP" onblur="getDadosEndereçoPorCEP(this.value)"/>
+				</div>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" placeholder="Endereço" readonly id="endereco" />
+				</div>
+			</div>
+
+			<div class="row form-group">
+				<div class="col-sm-6">
+					<input type="text" class="form-control" placeholder="Bairro" readonly  id="bairro"/>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" placeholder="Cidade" readonly id="cidade"/>
+				</div>
+
+				<div class="col-sm-2">
+					<input type="text" class="form-control" placeholder="UF" readonly id="uf"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

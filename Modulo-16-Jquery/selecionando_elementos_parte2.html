@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+
+    
+    <input type="text" placeholder="input 1">
+    <input type="text" placeholder="input 2">
+    <input type="text" placeholder="input 3">
+
+   <div class="lista1">
+        <div class="exemplo2">div 1</div>
+        <div class="exemplo2">div 2</div>
+        <div class="exemplo2">div 3</div>
+    </div>
+
+    <ul class="lista1">
+        <li class="exemplo2">opção 1</li>
+        <li class="exemplo2">opção 2</li>
+        <li>opção 3</li>
+    </ul>
+
+    <ul class="lista2">
+        <li class="exemplo2">opção 1</li>
+        <li class="exemplo2">opção 2</li>
+        <li>opção 3</li>
+    </ul>
+
+
+    <script>
+        
+        //combinação de selectores
+
+            //selecionar elementos por classe de tag específica
+            //console.log($('div.exemplo1'))
+
+            //selecionar elementos por classe de classe específica
+            //console.log($('.lista1 .exemplo2'))
+            //console.log($('.lista1 div.exemplo2'))
+            //console.log($('ul.lista1 .exemplo2'))
+
+        //actuação sobre o array de retorno dos elementos selecionados
+        //:first primeiro
+        //:last ultimo
+        //:even pares
+        //:odd impares
+        console.log($('.lista1 .exemplo2'))
+        
+
+        console.log($('.lista1 .exemplo2:first'))
+        console.log($('.lista1 .exemplo2:last'))
+        console.log($('.lista1 .exemplo2:even'))
+        console.log($('.lista1 .exemplo2:odd'))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        
+        $(document).ready(()=>{
+            //$('#lista1').append('<li>Item 4</li>')//acrescentar um elemento filho no fim
+            //$('#lista1').prepend('<li>Item 4</li>')//acrescentar um elemento filho no principio
+            //$('#lista2').prepend('<div>Item 4</div>')
+            //$('#lista2').after('<p>Eu fui inserido após a div</p>')//acrescentar depois um elemento irmao 
+            //$('#lista2').before('<p>Eu fui inserido após a div</p>')//acrescentar antes um elemento irmao 
+            //$('#lista1').html('<p>Eu fui inserido após a div</p>')//elimina o coloca novo conteudo filho
+            $('.item2').remove()//elimina especifico
+            
+        })
+    </script>
+</head>
+<body>
+
+    <ul id="lista1">
+        <li>Item 1</li>
+        <li class="item2">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <div id="lista2">
+        <div>Item 1</div>
+        <div class="item2">Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <hr>
+</body>
+
+</html>

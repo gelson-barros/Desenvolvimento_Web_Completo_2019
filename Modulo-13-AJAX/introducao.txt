@@ -1,0 +1,3 @@
+AJAX - Acrônimo de Asynchronous JavaScript And XML
+
+Uma metodologia de programação que possibilita a comunicação assíncrona entre front-end e back-end de aplicações Web.

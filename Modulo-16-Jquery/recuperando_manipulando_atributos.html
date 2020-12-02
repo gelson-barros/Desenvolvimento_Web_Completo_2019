@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script >
+        //attr ->atributo() //$('img').attr(<atributo>, <valor>)
+        $(document).ready(() =>{
+            //$('img').attr('src')//pegar o valor
+            //-->"esfera_1.png"
+            //$('img').attr('border')//pegar o valor
+            //-->"5"
+            //$('img').attr('src', 'esfera_2.png')//atrbuição de um novo valor no atributo
+            //$('img').attr('border', '20')//atrbuição de um novo valor no atributo
+            //console.log($('div').attr('style'))
+            $('div').attr('style', 'background-color: red; width: 100px;height: 100px;')
+            //$('input').attr('value', 'Eu continuo sendo um input')
+            //-->"Eu sou um input"
+            $('input').attr('type', 'password')
+        })
+    </script>
+</head>
+<body>
+    <img src="esfera_1.png" border="5">
+
+    <div style="background-color: blue; width: 200px;height: 200px; "></div>
+
+    <input type="text" value="Eu sou um input">
+</body>
+
+</html>

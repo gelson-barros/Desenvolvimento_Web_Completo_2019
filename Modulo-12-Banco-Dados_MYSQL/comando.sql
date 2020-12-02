@@ -199,3 +199,180 @@ SELECT
 FROM 
     tb_cursos
 
+/****************************************************/
+/*
+SELECT - Funções de agregação SUM e COUNT
+SUM(<coluna>) - Retorna o SOMA dos valor de todos os registros com base em uma coluna
+COUNT(*) - Retorna a quantidade de todos os registros de uma tabela.
+*/
+SELECT 
+    Funções de agregação
+FROM
+<tabela>
+WHERE
+<filtro(s)>
+
+SELECT 
+    SUM(investimento)
+FROM 
+    tb_cursos
+
+SELECT 
+    COUNT(*)
+FROM 
+    tb_cursos
+WHERE
+    area = true
+/****************************************************/
+/*
+Select - Agrupando seleção de registro(GROUP BY)
+Agrupa os registro com base em uma ou mais colunas cujos valores sejam iguais.Permite realizar funções de agregação em cada subconjunto agrupado de registros.
+*/
+SELECT 
+    <coluna(s)>
+FROM
+    <tabela(s)>
+WHERE
+    <filtro(s)>
+GROUP BY 
+    agrupamento
+ORDER BY
+    <ordenação>
+LIMIT
+    <offset>, <limit>
+
+
+
+SELECT 
+* 
+FROM 
+tb_alunos 
+GROUP BY
+	interesse 
+
+
+SELECT 
+	* , COUNT(*)
+FROM 
+tb_alunos 
+GROUP BY
+	interesse 
+
+SELECT 
+	interesse , COUNT(*)
+FROM 
+tb_alunos 
+GROUP BY
+	interesse
+
+SELECT 
+	interesse , COUNT(*) AS total_por_interesse
+FROM 
+tb_alunos 
+GROUP BY
+	interesse
+
+SELECT 
+	estado , COUNT(*) AS total_por_estado
+FROM 
+tb_alunos 
+where
+	estado = 'ES'
+
+/****************************************************/
+/*
+Select - Filtrando seleções agrupadas (HAVING)
+Filtro realizado sobre o resultado dos agrupamentos(GROUP BY)
+
+*/
+SELECT 
+    <coluna(s)>
+FROM
+    <tabela(s)>
+WHERE
+    <filtro(s)>
+GROUP BY 
+    agrupamento
+HAVING
+    filtro(s) sobre agrupamento
+ORDER BY
+    <ordenação>
+LIMIT
+    <offset>, <limit>
+
+
+SELECT 
+estado, COUNT(*) AS total_registro_por_estado 
+FROM 
+tb_alunos 
+GROUP BY 
+estado
+HAVING
+estado IN('MG', 'SP')
+
+SELECT 
+estado, COUNT(*) AS total_registro_por_estado 
+FROM 
+tb_alunos 
+GROUP BY 
+estado
+HAVING
+estado = 'MG'
+
+SELECT 
+estado, COUNT(*) AS total_registro_por_estado 
+FROM 
+tb_alunos 
+GROUP BY 
+estado
+HAVING
+total_registro_por_estado > 4
+
+SELECT 
+estado, COUNT(*) AS total_registro_por_estado 
+FROM 
+tb_alunos
+WHERE
+interesse != 'Esporte'
+GROUP BY 
+estado
+HAVING
+total_registro_por_estado > 4
+
+/****************************************************/
+/*
+UPDATE - Actualizando registros
+Filtro realizado sobre o resultado dos agrupamentos(GROUP BY)
+*/
+
+UPDATE
+    <tabela>
+SET 
+    <coluna>=<valor>,<coluna>=<valor>,<coluna>=<valor>
+WHERE
+    <filtro(s)>
+
+/****************************************************/
+/*
+DELETE - Excluindo registros
+
+*/
+
+DELETE FROM
+    <tabela>
+WHERE
+    <filtro(s)>
+
+DELETE FROM 
+    tb_alunos
+WHERE
+    idade IN(18,23,34) AND interesse = 'Esporte'
+
+
+
+UPDATE 
+tb_clientes
+SET
+sexo = 'M'
+WHERE 
+id_cliente IN(1,2,3,6,7)

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script >
+        
+        $(document).ready(()=>{
+            //conteudo interno de uma elemento
+            //$('#div1').html())//gettando
+            //$('#div1').html('qualquer coisa'))//settando
+            //console.log('conteudo div 1',$('#div1').html())
+            //console.log('conteudo div 2',$('#div2').html())
+            //$('#div1').html('qualquer coisa')
+            $('#div1').html('<strong style="color: red">Eu sou o valor novo</strong>')
+        })
+    </script>
+</head>
+<body>
+
+    <div id="div1" style="border:solid 1px #000; width:150px; height:150px">
+        <a href="#">Teste</a>
+        <p>Esse é o paragrafo</p>
+        texto 
+        <div>
+            div 
+        </div>
+    </div>
+
+    <div id="div2" style="border:solid 1px #000; width:150px; height:150px">
+        Div 2
+    </div>
+
+</body>
+
+</html>
