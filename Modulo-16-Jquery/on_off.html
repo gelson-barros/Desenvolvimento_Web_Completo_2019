@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<style>
+			.desfocado{
+				background-color: white;
+			}
+
+			.focado{
+				background-color: green;
+			}
+		</style>
+
+		<script src="jquery-3.3.1.js"></script>
+		<script>
+			$(document).ready(()=>{
+				$('body').append('<br/><br/><input type="text" class="desfocado"/>')
+				$('input').on('focus', e=>{
+					$(e.target).removeClass('desfocado')
+					$(e.target).addClass('focado')
+				})
+				$('input').on('blur', e=>{
+					$(e.target).removeClass('focado')
+					$(e.target).addClass('desfocado')
+				})
+
+				
+
+        	})
+		</script>
+	</head>
+
+	<body>
+		<input type="text" class="desfocado"/>
+	</body>
+
+</html>
