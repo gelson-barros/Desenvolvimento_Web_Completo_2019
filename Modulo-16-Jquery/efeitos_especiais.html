@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<style>
+			button {
+				margin-bottom: 5px;
+				width: 100px;
+			}
+
+			.div {
+				width: 100px;
+				height: 100px;
+			}
+
+			.div1 {
+				background-color: red
+			}
+
+			.div2 {
+				background-color: green
+			}
+
+			.div3 {
+				background-color: blue
+			}
+
+			.grupo {
+				padding: 25px;
+				float: left
+			}
+		</style>
+
+		<script src="jquery-3.3.1.js"></script>
+		<script>
+			//show()->('slow'),('medio'),('fast'), (numero)
+            //hide()->('slow'),('medio'),('fast'), (numero)
+            //toggle()->('slow'),('medio'),('fast'), (numero)
+            //fadeOut()->('slow'),('medio'),('fast'), (numero)
+            //fadeIn()->('slow'),('medio'),('fast'), (numero)
+            //fadeToggle()->('slow'),('medio'),('fast'), (numero)
+            //fadeTo()->(t(ms),opacidade)
+            //slideUp()->('slow'),('medio'),('fast'), (numero)
+            //slideDown()->('slow'),('medio'),('fast'), (numero)
+            //slideToggle()->('slow'),('medio'),('fast'), (numero)
+			$(document).ready(() => {
+				$('#btn1').on('click', ()=>{
+					$('#div1').toggle('slow')
+				})
+				/*
+				$('#btn2').on('click', ()=>{
+					$('#div2').fadeToggle('slow')
+				})
+				*/
+				$('#btn2').on('click', ()=>{
+					$('#div2').fadeTo(100,0.2)
+				})
+
+				$('#btn3').on('click', ()=>{
+					$('#div3').slideToggle('slow')
+				})
+				
+			})
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="grupo">
+			<button id="btn1" type="button">DIV 1</button>
+			<div id="div1" class="div div1"></div>
+		</div>
+
+		<div class="grupo">
+			<button id="btn2" type="button">DIV 2</button>
+			<div id="div2" class="div div2"></div>
+		</div>
+
+		<div class="grupo">
+			<button id="btn3" type="button">DIV 3</button>
+			<div id="div3" class="div div3"></div>
+		</div>
+			
+	</body>
+
+</html>
